@@ -1,0 +1,14 @@
+.name {
+    font-family: "Source Code Pro", monospace;
+    color: #DBDBDB;
+    opacity: 100;
+    font-weight: bold;
+    font-size: 40px;
+    z-index: 1;
+    
+
+}
+
+p {
+    margin: 3px;
+}
