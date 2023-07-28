@@ -4,16 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
-const Navbar = () => {
+const Navbar = ({goToLayer}) => {
   return (
     <nav>
       <div className="left-buttons">
-        <button className="accent">//home</button>
+        <button onClick={() => goToLayer(0)}className="accent">//home</button>
       </div>
       <div className="right-buttons">
-        <button className="normal">//resume</button>
-        <button className="normal">//skills</button>
-        <button className="normal">//projects</button>
+        <button onClick={() => goToLayer(1)} className="normal">//resume</button>
+        <button onClick={() => goToLayer(2)}className="normal">//skills</button>
+        <button onClick={() => goToLayer(3)}className="normal">//projects</button>
         <button className="icon">
             <FontAwesomeIcon icon={faGithub} /> {/* GitHub icon */}
         </button>

@@ -24,3 +24,31 @@
 
 }
 
+.intro{
+    font-family: "Source Code Pro", monospace;
+    color: #DBDBDB;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 20%;
+    margin-left: 8%;
+}
+
+.firstPage{
+  display: flex;
+
+
+}
+
+.rocket {
+  margin-top: 18%;
+  scale: 1.35;
+  margin-left: 12%;
+}
+
+
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
