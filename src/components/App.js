@@ -71,7 +71,7 @@ function App() {
 
                 <div className="image-wrapper">
                   <img className="slideshow" src={singapore}></img>
-                  <p className="image-text">i also like to travel (this is Singapore)</p>
+                  <p id="extra" className="image-text">i also like to travel (this is Singapore)</p>
                 </div>
               </div>
               <div class="quote">

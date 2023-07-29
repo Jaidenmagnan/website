@@ -182,7 +182,13 @@ p {
     width: 50%;
     margin-top: 5%;
     margin-left: 5%;
+    display:none;
   }
+
+  .snorlax {
+    display: none;
+  }
+
 
   .intro {
     font-size: 20px;
@@ -191,8 +197,8 @@ p {
 
   .slideshow {
     margin: 20px;
-    max-width: 200px;
-    height: 200px;
+    max-width: 175px;
+    height: 175px;
     border-radius: 30px;
   }
 
@@ -207,6 +213,7 @@ p {
   }
 
   .image-text{
+    font-size: 14px;
   }
 
   .quote {
