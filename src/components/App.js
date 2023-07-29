@@ -1,9 +1,11 @@
 import './App.css';
 import React, {useRef} from 'react';
 import Navbar from './Navbar';
+import Resume from './Resume';
 import { Parallax, ParallaxLayer} from '@react-spring/parallax';
 import stars from '../images/stars.gif'
 import rocket from '../images/rocket1.gif'
+import profile from '../images/profile.jpeg'
 import moon from '../images/endmoon.jpg'
 
 
@@ -45,16 +47,21 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={.25}>
+        <ParallaxLayer offset={1} speed={.1}>
           <div className="intro">
-            <h1>//resume</h1>
+            <h1>//about me</h1>
+            <div className="aboutme">
+              <img className="profile" src={profile}></img>
+              <p>THIS IS ALL THATS ABT ME</p>
+            </div>
           </div>
 
         </ParallaxLayer>
 
         <ParallaxLayer offset={2} speed={1}>
           <div className="intro">
-            <h1>//skills</h1>
+            <h1>//resume</h1>
+            <Resume />
           </div>
         </ParallaxLayer>
 

@@ -11,8 +11,8 @@ const Navbar = ({goToLayer}) => {
         <button onClick={() => goToLayer(0)}className="accent">//home</button>
       </div>
       <div className="right-buttons">
-        <button onClick={() => goToLayer(1)} className="normal">//resume</button>
-        <button onClick={() => goToLayer(2)}className="normal">//skills</button>
+        <button onClick={() => goToLayer(1)} className="normal">//about me</button>
+        <button onClick={() => goToLayer(2)}className="normal">//resume</button>
         <button onClick={() => goToLayer(3)}className="normal">//projects</button>
         <button className="icon">
             <FontAwesomeIcon icon={faGithub} /> {/* GitHub icon */}
