@@ -5,7 +5,9 @@ import Resume from './Resume';
 import { Parallax, ParallaxLayer} from '@react-spring/parallax';
 import stars from '../images/stars.gif'
 import rocket from '../images/rocket1.gif'
+import book from '../images/reading.jpeg'
 import profile from '../images/profile.jpeg'
+import singapore from '../images/singapore.png'
 import moon from '../images/endmoon.jpg'
 
 
@@ -51,8 +53,12 @@ function App() {
           <div className="intro">
             <h1>//about me</h1>
             <div className="aboutme">
-              <img className="profile" src={profile}></img>
-              <p>THIS IS ALL THATS ABT ME</p>
+              <div className="images">
+                <img className="slideshow" src={profile}></img>
+                <img className="slideshow" src={book}></img>
+                <img className="slideshow" src={singapore}></img>
+
+              </div>
             </div>
           </div>
 
