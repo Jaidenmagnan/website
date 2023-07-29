@@ -12,7 +12,6 @@ const Resume = () => {
             <li>Javascript, CSS, HTML, React, Django, SQL</li>
             <li> C++, Rust, Python</li>
             <li>Visual Studio Code, Vim, Linux, MacOS, Windows</li>
-            <li>Figma, Inventor   </li>
         </ul>
         </div>
         <div className="Experience">
@@ -36,10 +35,13 @@ const Resume = () => {
             </ul>
             <div className="Education">
                 <h3 className="subheader">Education</h3>
-                <h3 className="secondary">@ The University of Florida</h3>
-                <p className="describe">Bachelors Degree in Computer Engineering</p>
-                <p className="describe">GPA: 3.91</p>
-                <p className="describe">Expected Graduation: 2026</p>
+                <li>
+                    <h3 className="secondary">@ The University of Florida</h3>
+                    <p className="describe">Bachelors Degree in Computer Engineering</p>
+                    <p className="describe">GPA: 3.91</p>
+                    <p className="describe">Expected Graduation: 2026</p>
+
+                </li>
             </div>
             <div className="Projects">
                 <h3 className="subheader">Projects</h3>
