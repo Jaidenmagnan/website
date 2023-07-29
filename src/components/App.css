@@ -65,6 +65,10 @@ h1 {
   margin: 0;
 }
 
+.header {
+  display: flex;
+}
+
 .astro {
   width: 25%;
   margin-top: 10%;
@@ -150,4 +154,76 @@ p {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .introduction {
+    font-size: 40px;
+    margin-top: 50%;
+    margin-left: 5%;
+  }
+
+  .firstPage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rocket {
+    margin-top: 10%;
+    width: 30%;
+  }
+
+  .contact {
+    font-size: 20px;
+  }
+
+  .astro {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .intro {
+    font-size: 20px;
+    margin-top: 2%;
+  }
+
+  .slideshow {
+    margin: 20px;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 30px;
+  }
+
+  .images {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .image-text{
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .rocket {
+    margin-top: 10%;
+    scale: 1;
+    margin-left: 5%;
+  }
+
+  .quote img {
+    width: 30%;
+  }
+
+  .moving {
+    padding: 5px;
+  }
 }

@@ -50,3 +50,17 @@ a {
   color: inherit;
 }
   
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  button {
+    font-size: 16px;
+  }
+  
+  .normal {
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+}

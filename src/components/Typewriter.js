@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const Typewriter = ({ text, typingDelay = 100, erasingDelay = 50, delay = 1000 }) => {
+const Typewriter = ({ text, typingDelay = 70, erasingDelay = 50, delay = 1000 }) => {
   const [displayText, setDisplayText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
   const currentIndex = useRef(0);

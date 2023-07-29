@@ -32,3 +32,24 @@ ul {
     margin: 0; /* Remove default margin */
     display: flex; /* Use flexbox to space items horizontally */
   }
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+    .subheader {
+      font-size: 22px;
+    }
+  
+    .describe {
+      font-size: 16px;
+    }
+  
+    .secondary {
+      font-size: 18px;
+    }
+  
+    li {
+      font-size: 16px;
+      padding: 8px; /* Reduce the padding for smaller screens */
+      margin-right: 8px; /* Reduce the spacing between the boxes for smaller screens */
+    }
+  }

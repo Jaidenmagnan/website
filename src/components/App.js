@@ -14,7 +14,6 @@ import Typewriter from './Typewriter';
 import astro from '../images/astro.gif'
 import fantasy from '../images/planet.gif';
 
-
 function App() {
   const parallaxRef = useRef(null);
 
@@ -86,7 +85,9 @@ function App() {
 
         <ParallaxLayer offset={2} speed={.25}>
           <div className="intro">
-            <h1>//resume</h1>
+            <div className="header">
+              <h1>//resume</h1>
+            </div>
             <div className="resumestuff">
               <Resume />
               <img src={snorlax}className="snorlax"></img>
