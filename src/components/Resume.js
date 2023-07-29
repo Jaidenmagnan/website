@@ -37,7 +37,7 @@ const Resume = () => {
             <div className="Education">
                 <h3 className="subheader">Education</h3>
                 <h3 className="secondary">@ The University of Florida</h3>
-                <p className="describe">Bachelors Degree in Computer Engineer</p>
+                <p className="describe">Bachelors Degree in Computer Engineering</p>
                 <p className="describe">GPA: 3.91</p>
                 <p className="describe">Expected Graduation: 2026</p>
             </div>

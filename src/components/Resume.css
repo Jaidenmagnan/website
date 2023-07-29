@@ -52,7 +52,10 @@ ul {
       padding: 6px; /* Reduce the padding for smaller screens */
       margin-right: 10px; /* Reduce the spacing between the boxes for smaller screens */
     }
+  
     ul {
-        margin-right: 8%; 
+      margin-right: 0; /* Remove the problematic margin-right for smaller screens */
+      padding-left: 10px; /* Add some padding on the left to create space */
     }
   }
+  
