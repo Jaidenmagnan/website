@@ -49,7 +49,10 @@ ul {
   
     li {
       font-size: 12px;
-      padding: 8px; /* Reduce the padding for smaller screens */
-      margin-right: 8px; /* Reduce the spacing between the boxes for smaller screens */
+      padding: 6px; /* Reduce the padding for smaller screens */
+      margin-right: 10px; /* Reduce the spacing between the boxes for smaller screens */
+    }
+    ul {
+        margin-right: 8%; 
     }
   }
