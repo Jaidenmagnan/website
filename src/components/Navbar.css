@@ -44,4 +44,9 @@ body {
     color: #64A7D8;
     padding: 10px;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
   

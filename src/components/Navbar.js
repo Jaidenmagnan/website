@@ -15,10 +15,14 @@ const Navbar = ({goToLayer}) => {
         <button onClick={() => goToLayer(2)}className="normal">//resume</button>
         <button onClick={() => goToLayer(3)}className="normal">//contact</button>
         <button className="icon">
+          <a href="https://github.com/Jaidenmagnan">
             <FontAwesomeIcon icon={faGithub} /> {/* GitHub icon */}
+          </a>
         </button>
         <button className="icon">
-            <FontAwesomeIcon icon={faLinkedin} /> {/* LinkedIn icon */}
+            <a href="https://linkedin.com/in/jaiden-magnan-611a4018a">
+              <FontAwesomeIcon icon={faLinkedin} /> {/* LinkedIn icon */}
+            </a>
         </button>
       </div>
     </nav>

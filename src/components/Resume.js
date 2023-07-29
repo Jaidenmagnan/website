@@ -19,7 +19,7 @@ const Resume = () => {
             <h2 className="subheader">Experience</h2>
             <ul className="projects">
                 <li>
-                    <h3 className="secondary">SWE Intern</h3>
+                    <h3 className="secondary">Software Engineering Intern</h3>
                     <p className="describe">@ DBS Bank</p>
                     <p className="describe">2023</p>
                 </li>

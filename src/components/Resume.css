@@ -22,7 +22,7 @@ li {
     color: #dbdbdb;
     font-size: 18px;
     margin: 0px;
-    display: inline-block; /* Make each list item an inline block to create a box */
+    display: block; /* Make each list item an inline block to create a box */
     padding: 10px; /* Add padding to create space within each box */
     margin-right: 10px; /* Add spacing between the boxes */
 }

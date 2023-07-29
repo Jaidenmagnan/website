@@ -8,11 +8,11 @@ import rocket from '../images/rocket1.gif'
 import book from '../images/reading.jpeg'
 import profile from '../images/profile.jpeg'
 import singapore from '../images/singapore.png'
-import moon from '../images/endmoon.jpg'
-import snorlax from '../images/snorlax.gif'
-import pikachu from '../images/pikachu.gif'
+import moon from '../images/endmoon.png'
+import snorlax from '../images/asteroid.gif'
 import Typewriter from './Typewriter';
-import fantasy from '../images/fantasy.gif';
+import astro from '../images/astro.gif'
+import fantasy from '../images/planet.gif';
 
 
 function App() {
@@ -97,6 +97,15 @@ function App() {
         >
           <div className="intro">
             <h1>//contact</h1>
+            <img className="astro" src={astro}></img>
+            <img className="moon" src={moon}></img>
+            <div className="contact">
+              <ol>
+                <li> +1 772-577-8948</li>
+                <li> jaidenmagnan@gmail.com</li>
+                <button>linkedin</button>
+              </ol>
+            </div>
           </div>
         </ParallaxLayer>
 

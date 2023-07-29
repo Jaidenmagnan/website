@@ -59,6 +59,20 @@ h1 {
     color: #DBDBDB;
 }
 
+.contact {
+  color: #dbdbdb;
+  font-size: 30px;
+  margin: 0;
+}
+
+.astro {
+  width: 25%;
+  margin-top: 10%;
+  margin-left: 20%;
+  z-index: 1;
+  position: absolute;
+}
+
 .intro{
     font-family: "Source Code Pro", monospace;
     font-weight: bold;
