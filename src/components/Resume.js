@@ -12,7 +12,7 @@ const Resume = () => {
             <li>Javascript, CSS, HTML, React, Django, SQL</li>
             <li> C++, Rust, Python</li>
             <li>Visual Studio Code, Vim, Linux, MacOS, Windows</li>
-            <li>Figma, Inventor</li>
+            <li>Figma, Inventor   </li>
         </ul>
         </div>
         <div className="Experience">

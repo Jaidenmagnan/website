@@ -54,8 +54,6 @@ ul {
     }
   
     ul {
-      margin-right: 0; /* Remove the problematic margin-right for smaller screens */
-      padding-left: 10px; /* Add some padding on the left to create space */
     }
   }
   
