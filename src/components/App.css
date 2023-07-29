@@ -24,13 +24,22 @@
 
 }
 
-.intro{
+.introduction{
     font-family: "Source Code Pro", monospace;
-    color: #DBDBDB;
     font-weight: bold;
     font-size: 60px;
     margin-top: 20%;
-    margin-left: 8%;
+    margin-left: 10%;
+    color: #DBDBDB;
+}
+
+.intro{
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 2%;
+    color: #64A7D8;
 }
 
 .firstPage{

@@ -37,7 +37,7 @@ function App() {
 
         <ParallaxLayer speed={.5}>
           <div className="firstPage">
-            <div className="intro">
+            <div className="introduction">
               <p>Hello,</p>
               <p>I'm Jaiden Magnan</p>
             </div>
@@ -47,21 +47,21 @@ function App() {
 
         <ParallaxLayer offset={1} speed={.25}>
           <div className="intro">
-            <p>THIS IS THE RESUME LAYER</p>
+            <h1>//resume</h1>
           </div>
 
         </ParallaxLayer>
 
         <ParallaxLayer offset={2} speed={1}>
           <div className="intro">
-            <p>THIS IS THE SKILLS LAYER</p>
+            <h1>//skills</h1>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer offset={3}
         >
           <div className="intro">
-            <p>THIS IS THE PROJECTS LAYER</p>
+            <h1>//contact</h1>
           </div>
         </ParallaxLayer>
 
