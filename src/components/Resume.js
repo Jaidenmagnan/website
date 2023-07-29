@@ -41,6 +41,23 @@ const Resume = () => {
                 <p className="describe">GPA: 3.91</p>
                 <p className="describe">Expected Graduation: 2026</p>
             </div>
+            <div className="Projects">
+                <h3 className="subheader">Projects</h3>
+                <ul className="projects">
+                    <li>
+                        <h3 className="secondary">3D Graph Algorithms</h3>
+                        <p className="describe">@ UFL</p>
+                        <p className="describe">2023</p>
+                    </li>
+
+                    <li>
+                        <h3 className="secondary">Minesweeper</h3>
+                        <p className="describe">@ UFL</p>
+                        <p className="describe">2023</p>
+                    </li>
+
+                </ul>
+            </div>
         </div>
     </div>
 

@@ -12,6 +12,32 @@
     height: 100vh;
 }
 
+h1 {
+  font-size: 35px;
+  margin-left: 3%;
+}
+
+.image-text {
+  font-size:16px;
+  color: #dbdbdb;
+  text-align: center;
+}
+
+.image-wrapper {
+  justify-content: center;
+}
+
+.resumestuff {
+  display: flex;
+  margin-left: 3%;
+}
+
+.snorlax {
+  margin-right: 5%;
+  margin-bottom: 4%;
+  margin-left:2%;
+}
+
 .content{
   position: absolute;
   width:100%;
@@ -38,7 +64,6 @@
     font-weight: bold;
     font-size: 30px;
     margin-top: 4%;
-    margin-left: 2%;
     color: #64A7D8;
 }
 
@@ -48,22 +73,17 @@
   padding: 0px;
 }
 
-.images figcaption {
-  font-size: 12px;
-  color: #dbdbdb;
-}
 
 .slideshow {
   margin: 50px; /* Add some spacing between the images (optional) */
-  max-width: 350px; /* Adjust the width of the images to your liking */
-  max-height: 300px;
+  max-width: 300px; /* Adjust the width of the images to your liking */
+  height: 300px;
   border-radius: 40px;
 }
 
 .aboutme {
   margin-top: 0;
   padding: 0px;
-  display: flex;
 }
 
 .firstPage{
@@ -85,3 +105,35 @@ p {
   margin: 0px;
 }
 
+.static {
+  position: relative;
+  height: 300px; /* Set the height as needed */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.static img {
+  width: 100px;
+  height: auto;
+}
+
+.quote {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-top: 5%;
+
+}
+
+.quote img {
+  width: 20%;
+  margin-right:5%;
+}
+
+.moving {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}

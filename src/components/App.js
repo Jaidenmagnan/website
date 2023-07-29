@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useRef} from 'react';
+import React, {useRef, useEffect} from 'react';
 import Navbar from './Navbar';
 import Resume from './Resume';
 import { Parallax, ParallaxLayer} from '@react-spring/parallax';
@@ -9,6 +9,10 @@ import book from '../images/reading.jpeg'
 import profile from '../images/profile.jpeg'
 import singapore from '../images/singapore.png'
 import moon from '../images/endmoon.jpg'
+import snorlax from '../images/snorlax.gif'
+import pikachu from '../images/pikachu.gif'
+import Typewriter from './Typewriter';
+import fantasy from '../images/fantasy.gif';
 
 
 function App() {
@@ -19,6 +23,8 @@ function App() {
       parallaxRef.current.scrollTo(layerIndex);
     }
   };
+
+  const text = ` "As I fear not a child with a weapon he cannot lift, I will never fear the mind of a man who does not think." -Brandon Sanderson, Words of Radiance`;
 
   return (
     <div className="App">
@@ -39,7 +45,7 @@ function App() {
           >
         </ParallaxLayer>
 
-        <ParallaxLayer speed={.5}>
+        <ParallaxLayer speed={1}>
           <div className="firstPage">
             <div className="introduction">
               <p>Hello,</p>
@@ -49,28 +55,44 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={.1}>
+        <ParallaxLayer offset={1} speed={.25}>
           <div className="intro">
             <h1>//about me</h1>
             <div className="aboutme">
               <div className="images">
-                <img className="slideshow" src={profile}></img>
-                <img className="slideshow" src={book}></img>
-                <img className="slideshow" src={singapore}></img>
+                <div className="image-wrapper">
+                  <img className="slideshow" src={profile}></img>
+                  <p className="image-text">this is me</p>
+                </div>
+                
+                <div className="image-wrapper">
+                  <img className="slideshow" src={book}></img>
+                  <p className="image-text">i like to read</p>
+                </div>
 
+                <div className="image-wrapper">
+                  <img className="slideshow" src={singapore}></img>
+                  <p className="image-text">i also like to travel (this is Singapore)</p>
+                </div>
+              </div>
+              <div class="quote">
+                <img src={fantasy}></img>
+                <Typewriter text={text}/>
               </div>
             </div>
           </div>
 
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={1}>
+        <ParallaxLayer offset={2} speed={.25}>
           <div className="intro">
             <h1>//resume</h1>
-            <Resume />
+            <div className="resumestuff">
+              <Resume />
+              <img src={snorlax}className="snorlax"></img>
+            </div>
           </div>
         </ParallaxLayer>
-
         <ParallaxLayer offset={3}
         >
           <div className="intro">
