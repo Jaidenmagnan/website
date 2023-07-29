@@ -185,8 +185,14 @@ p {
     display:none;
   }
 
+  .resumestuff {
+    display: flex;
+    flex-direction: column;
+  }
+
   .snorlax {
-    display: none;
+    width: 35%;
+    margin-left: 30%;
   }
 
 
