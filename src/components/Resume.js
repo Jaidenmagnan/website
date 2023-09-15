@@ -19,7 +19,7 @@ const Resume = () => {
             <ul className="projects">
                 <li>
                     <h3 className="secondary">Software Engineering Intern</h3>
-                    <p className="describe">@ DBS Bank</p>
+                    <p className="describe">@ WTO </p>
                     <p className="describe">2023</p>
                 </li>
                 <li>
