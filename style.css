@@ -1,5 +1,6 @@
 body {
 	font-family: 'IBM Plex Mono', monospace;
+	background-image: url("space.gif");
 	background-color: #000;
 	color: white;
 	max-width: 40%;
