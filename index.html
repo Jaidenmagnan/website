@@ -3,79 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
     <title>jaiden magnan</title>
-    <style>
-        body {
-            font-family: 'IBM Plex Mono', monospace;
-            background-color: white;
-            color: black;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-        
-        img {
-            max-width: 600px;
-            width: 100%;
-            height: auto;
-            margin: 20px 0;
-        }
-        
-        a {
-            color: blue;
-            text-decoration: underline;
-        }
-        
-        a:visited {
-            color: purple;
-        }
-    </style>
-</head>
+    </head>
 <body>
-    <h1>jaiden magnan</h1>
-    
-    <img src="image.png" alt="image">
-    
-    <p id="quote">"the best code is the code you don't have to write"</p>
-    
-    <p>
-        <a href="https://github.com/Jaidenmagnan">github</a> | 
-        <a href="resume.html">resume</a> | 
-        <a href="articles.html">articles</a> |
-        <a href="mailto:jaidenmagnan@gmail.com">contact</a>
-    </p>
-    
-    <p style="margin-top: 40px; font-size: 0.9em; color: #666;">
-        last updated: <span id="last-updated"></span>
-    </p>
+	<div class="content">
+    	<h1>jaiden magnan</h1>
+    	
+    	<img src="moon_animated.gif" alt="image">
+    	
+    	<p id="quote">"the best code is the code you don't have to write"</p>
+    	
+    	<p>
+    	    <a href="https://github.com/Jaidenmagnan">github</a> | 
+    	    <a href="resume.html">resume</a> | 
+    	    <a href="articles.html">articles</a> |
+    	    <a href="mailto:jaidenmagnan@gmail.com">contact</a>
+    	</p>
+    	
+    	<p style="margin-top: 40px; font-size: 0.9em; color: #666;">
+    	    last updated: <span id="last-updated"></span>
+    	</p>
 
-    <script>
-        const quotes = [
-            "...things get broken, and sometimes they get repaired, and in most cases, you realize that no matter what gets damaged, life rearranges itself to compensate for your loss, sometimes wonderfully.” —Hanya Yanagihara",
-	   "You keep asking why your work is not enough, and I don’t know how to answer that, because it is enough to exist in the world and marvel at it. You don’t need to justify that, or earn it. You are allowed to just live.” —Becky Chambers"
-        ];
-        
-        function setRandomQuote() {
-            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-            document.getElementById('quote').textContent = `${randomQuote}`;
-        }
-        
-        function setLastUpdated() {
-            const today = new Date();
-            const dateString = today.toLocaleDateString('en-US', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            });
-            document.getElementById('last-updated').textContent = dateString;
-        }
-        
-        // Initialize everything
-        setRandomQuote();
-        setLastUpdated();
-        
-        // Change quote every 10 seconds
-        setInterval(setRandomQuote, 10000);
-    </script>
+    	<script>
+    	    const quotes = [
+    	        "things get broken, and sometimes they get repaired, and in most cases, you realize that no matter what gets damaged, life rearranges itself to compensate for your loss, sometimes wonderfully.” —Hanya Yanagihara",
+		   "You keep asking why your work is not enough, and I don’t know how to answer that, because it is enough to exist in the world and marvel at it. You don’t need to justify that, or earn it. You are allowed to just live.” —Becky Chambers"
+    	    ];
+    	    
+    	    function setRandomQuote() {
+    	        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    	        document.getElementById('quote').textContent = `${randomQuote}`;
+    	    }
+    	    
+    	    function setLastUpdated() {
+    	        const today = new Date();
+    	        const dateString = today.toLocaleDateString('en-US', { 
+    	            year: 'numeric', 
+    	            month: 'long', 
+    	            day: 'numeric' 
+    	        });
+    	        document.getElementById('last-updated').textContent = dateString;
+    	    }
+    	    
+    	    // Initialize everything
+    	    setRandomQuote();
+    	    setLastUpdated();
+    	    
+    	    // Change quote every 10 seconds
+    	    setInterval(setRandomQuote, 10000);
+    	</script>
+	</div>
 </body>
 </html>

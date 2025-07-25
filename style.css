@@ -1,17 +1,31 @@
-/* Center the entire content vertically on the page */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+	font-family: 'IBM Plex Mono', monospace;
+	background-color: #000;
+	color: white;
+	max-width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
 }
 
-/* Center the text content */
-h1, p {
-  text-align: center;
+img {
+	max-width: 300px;
+	width: 100%;
+	height: auto;
+	margin: 20px 0;
 }
 
-/* Center the navigation links */
+a {
+	color: white;
+	text-decoration: underline;
+}
+
+content {
+	margin: 0 auto;
+}
+
+a:visited {
+	color: gray;
+}
 
