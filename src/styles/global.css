@@ -1,0 +1,599 @@
+/* 
+This global.css takes the styling from Bear Blog and adapts it for use in Astro.
+Source: https: //github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+*/
+/*
+ * Bearming — a personal Bear theme
+ * Version 3.0.1 | 2025-12-15
+ * Robert Birming | robertbirming.com
+ */
+
+/* =========================
+   Palette: Swedish fika ☕️
+   ========================= */
+:root {
+  color-scheme: light dark;
+
+  /* Light mode colors */
+  --bg-light: #1a1612;
+  --txt-light: #e8e3d8;
+  --link-light: #e8945f;
+
+  /* Dark mode colors */
+  --bg-dark: #1a1612;
+  --txt-dark: #e8e3d8;
+  --link-dark: #e8945f;
+  
+  /* =========================
+   Bearming defaults 
+   ========================= */
+
+  --bg: var(--bg-light);
+  --txt: var(--txt-light);
+  --link: var(--link-light);
+
+  --muted: color-mix(in srgb, var(--txt) 62%, var(--bg));
+  --visited: color-mix(in srgb, var(--link) 25%, var(--muted));
+  --surface: color-mix(in srgb, var(--txt) 9%, var(--bg));
+  --border: color-mix(in srgb, var(--txt) 21%, var(--bg));
+
+  --font-small: 0.95rem;
+  --space: 1.5rem;
+  --radius: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--bg-dark);
+    --txt: var(--txt-dark);
+    --link: var(--link-dark);
+
+
+    --muted: color-mix(in srgb, var(--txt) 72%, var(--bg));
+    --visited: color-mix(in srgb, var(--link) 30%, var(--muted));
+    --surface: color-mix(in srgb, var(--bg) 93%, var(--txt));
+    --border: color-mix(in srgb, var(--bg) 82%, var(--txt));
+  }
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('https://copypaste.wtf/TT2020/dist/TT2020Base-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('https://copypaste.wtf/TT2020/dist/TT2020Base-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ictu Oculi';
+  font-weight: 300 900;
+  src: url('https://m-casanova.github.io/IctuOculi/woff2/IctuOculi.woff2') format('woff2-variations');
+}
+
+/* =========================
+   Base theme
+   ========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  height: 100%;
+  background: var(--bg);
+  background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+
+}
+
+:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+body {
+  max-width: 65ch;
+  background: var(--bg);
+  margin-inline: auto;
+  margin-block: 0;
+  padding: 1.25rem;
+  color: var(--txt);
+  font-family: system-ui, sans-serif;
+  font-family: 'Ictu Oculi', serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  min-height: 100%; /* Add this line */
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  margin-block: var(--space);
+}
+
+h1, h2, h3, h4 {
+  margin-block: 2rem 0.75rem;
+  line-height: 1.3;
+  font-weight: 600;
+  font-family: 'TT2020', serif;
+
+}
+
+:is(h1, h2, h3, h4):first-child {
+  margin-block-start: 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.1rem; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
+ul,
+ol {
+  margin-block: var(--space);
+  padding-inline-start: 1.6rem;
+}
+
+li + li {
+  margin-block-start: 0.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-block: 0.25rem;
+  margin-inline: 0;
+}
+
+blockquote {
+  margin-block: calc(var(--space) * 1.25);
+  margin-inline: 0;
+  padding: 0.9rem 1.2rem;
+  background: var(--surface);
+  border-inline-start: 3px solid var(--link);
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+blockquote > *:first-child { margin-block-start: 0; }
+blockquote > *:last-child  { margin-block-end: 0; }
+
+blockquote cite {
+  display: block;
+  margin-block-start: 0.6rem;
+  font-style: normal;
+  font-size: var(--font-small);
+  color: color-mix(in srgb, var(--muted) 70%, var(--txt));
+}
+
+blockquote cite::before {
+  content: "— ";
+}
+
+hr {
+  margin-block: calc(var(--space) * 1.5);
+  margin-inline: 0;
+  border: none;
+  border-block-start: 1px solid var(--border);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-block: var(--space);
+  margin-inline: auto;
+  border-radius: var(--radius);
+}
+
+figure {
+  margin-block: var(--space);
+  margin-inline: 0;
+}
+
+figure > p {
+  margin: 0;
+  padding: 0;
+}
+
+figure img {
+  margin-block: 0;
+}
+
+figcaption {
+  margin-block-start: 0.8rem;
+  font-size: var(--font-small);
+  color: var(--muted);
+  text-align: center;
+  font-style: italic;
+}
+
+time {
+  color: var(--muted);
+  font-size: var(--font-small);
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+}
+
+code {
+  font-family: ui-monospace, monospace;
+
+  background: var(--surface);
+  padding: 0.1rem 0.3rem;
+  font-size: var(--font-small);
+  overflow-wrap: anywhere;
+}
+
+pre {
+  margin-block: var(--space);
+  margin-inline: 0;
+  padding: 1rem;
+  font-size: 0.85em;
+  line-height: 1.5;
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  margin-block: var(--space);
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  background: var(--surface);
+  font-weight: 600;
+  border-block-end: 2px solid var(--border);
+}
+
+form {
+  margin-block: calc(var(--space) * 1.25);
+  display: grid;
+  gap: 1rem;
+}
+
+form p {
+  margin: 0;
+}
+
+form#upvote-form {
+  margin: 0;
+  display: inline;
+}
+
+form input:not([type="submit"]):not([type="hidden"]),
+form textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  color: var(--txt);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+form input:not([type="submit"]):not([type="hidden"])::placeholder,
+form textarea::placeholder {
+  color: var(--muted);
+}
+
+form textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+form button:not(.upvote-button),
+form input[type="submit"] {
+  padding: 0.65rem 1rem;
+  background: var(--link);
+  color: var(--bg);
+  font: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+form input[type="submit"] {
+  width: 100%;
+}
+
+form button:not(.upvote-button):hover,
+form input[type="submit"]:hover {
+  opacity: 0.85;
+}
+
+header {
+  margin-block: 1rem 1.8rem;
+  margin-inline: 0;
+}
+
+header h1 {
+  margin-block-end: 0.3rem;
+  color: var(--txt);
+  font-size: 1.5rem;
+}
+
+.title:hover {
+  text-decoration: none;
+}
+
+nav p {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.75rem;
+  row-gap: 0.25rem;
+  font-size: var(--font-small);
+}
+
+footer {
+  margin-block-start: 1rem;
+  padding-block: 1rem 2rem !important;
+  text-align: center;
+  color: var(--muted);
+  font-size: var(--font-small);
+}
+
+footer p {
+  margin-block: 0.5rem;
+}
+
+footer > span:last-child {
+  display: block;
+  margin-block-start: 0.75rem;
+}
+
+/* Blog list */
+.blog-posts {
+  list-style-type: none;
+  margin-block: var(--space);
+  margin-inline: 0;
+  padding: 0;
+}
+
+.blog-posts li {
+  display: flex;
+  align-items: baseline;
+  gap: 1.3rem;
+  margin-block-end: 0.3rem;
+}
+
+.blog-posts li:last-child {
+  margin-block-end: 0;
+}
+
+.blog-posts time {
+  flex-shrink: 0;
+}
+
+.blog-posts li a:visited {
+  color: var(--visited);
+}
+
+/* Posts and pages*/
+.post main h1:first-child {
+  margin-block-end: 0.3rem;
+}
+
+.post main h1 + p {
+  margin-block: 0 var(--space);
+}
+
+.page main h1:first-child {
+  margin-block-end: var(--space);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block: var(--space);
+  font-size: var(--font-small);
+}
+
+/* =========================
+   Optional add-ons
+   ========================= */
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  header,
+  nav,
+  footer,
+  .upvote-button {
+    display: none;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  a:visited {
+    color: #000;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+  }
+
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+  }
+
+  blockquote,
+  pre,
+  img {
+    page-break-inside: avoid;
+  }
+}
+/* Guestbook | Version 1.0.0 */
+#guestbooks___guestbook-messages-container {
+  margin-block: var(--space);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+#guestbooks___guestbook-messages-container > div {
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: var(--font-small);
+  color: var(--txt);
+  overflow-wrap: anywhere;
+  transition: border-color 0.15s ease;
+}
+
+#guestbooks___guestbook-messages-container > div:hover {
+  border-color: color-mix(in srgb, var(--border) 70%, var(--link));
+}
+
+#guestbooks___guestbook-messages-container p {
+  margin: 0;
+  margin-block-end: 0.75rem;
+}
+
+#guestbooks___guestbook-messages-container p:last-child {
+  margin-block-end: 0;
+}
+
+#guestbooks___guestbook-messages-container blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-style: normal;
+  color: var(--txt);
+}
+
+#guestbooks___guestbook-made-with {
+  font-size: var(--font-small);
+  color: var(--muted);
+}
+
+#guestbooks___guestbook-messages-container :is(time, small, em, .date, .timestamp, .meta),
+#guestbooks___guestbook-messages-container [datetime] {
+  color: var(--muted) !important;
+}
+
+
+/* Upvote button: Heart | Version 1.0.0 */
+:is(.post, .page) .upvote-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0 0.1em;
+  border: 0;
+  border-radius: var(--radius);
+  color: var(--muted);
+  font: inherit;
+  font-size: var(--font-small);
+  line-height: 1.2;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.15s ease;
+}
+
+:is(.post, .page) .upvote-button:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+:is(.post, .page) .upvote-button svg {
+  display: none !important;
+}
+
+:is(.post, .page) .upvote-button .upvote-count {
+  font-size: var(--font-small);
+  font-variant-numeric: tabular-nums;
+}
+
+:is(.post, .page) .upvote-button .upvote-count::before {
+  content: "♡";
+  display: inline-block;
+  margin-right: 0.1em;
+  font-size: 1.4em;
+  line-height: 1;
+  color: var(--link);
+  vertical-align: -0.06em;
+  transition: transform 0.2s ease;
+}
+
+:is(.post, .page) .upvote-button:not(.upvoted):not([disabled]):hover
+.upvote-count::before {
+  transform: scale(1.25);
+}
+
+:is(.post, .page) .upvote-button:not([disabled]):active {
+  transform: translateY(1px);
+}
+
+:is(.post, .page) .upvote-button.upvoted .upvote-count::before,
+:is(.post, .page) .upvote-button[disabled] .upvote-count::before {
+  content: "♥";
+}
+
+:is(.post, .page) .upvote-button.upvoted .upvote-count,
+:is(.post, .page) .upvote-button[disabled] .upvote-count {
+  color: var(--link);
+}
+
+:is(.post, .page) .upvote-button[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}

@@ -1,0 +1,23 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import Nav from "../../components/Nav.astro";
+import {Content as BookmarkContent} from './bookmarks.md';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title="bookmarks" description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header>
+      <Nav />
+    </Header>
+    <main>
+        <BookmarkContent />
+    </main>
+    <Footer />
+  </body>
+</html>
