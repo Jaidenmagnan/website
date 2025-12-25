@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = "jmoney";
 export const SITE_DESCRIPTION = "jmoney's personal website.";
-export const SITE_URL = "http://localhost:4321";
+export const SITE_URL = "https://jmoney.world";
