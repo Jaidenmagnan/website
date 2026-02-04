@@ -1,11 +1,7 @@
 ---
-import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
-import Nav from "../../components/Nav.astro";
+import Layout from "../../layouts/Layout.astro";
 
 const posts = (await getCollection("blog")).sort(
   (b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -18,16 +14,7 @@ const uniqueTags = [
 ].sort();
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title="posts" description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header>
-      <Nav />
-    </Header>
-    <main>
+<Layout title="posts">
       <ul class="blog-posts">
         {
           posts.map((post) => (
@@ -51,7 +38,6 @@ const uniqueTags = [
           ))
         }
       </div>
-    </main>
-    <Footer />
-  </body>
-</html>
+
+</Layout>
+
