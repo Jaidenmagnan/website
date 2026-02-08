@@ -2,20 +2,10 @@
 title: jmoney
 favicon: 🕯️ 
 ---
+![512929_1](https://bear-images.sfo2.cdn.digitaloceanspaces.com/jmoney/512929_1-2.webp)
 
-**Welcome to my Tavern!** 
+Hi im Jaiden! This is my website where I will share my thoughts on tech, fantasy, and other things I find interesting. I started this website to showcase some projects I have worked on and document my learning as I go.
 
-This is my space where I will share my thoughts on tech, fantasy, and other things I find interesting. 
-
-```
-        ,   ."".   ,
-      , #   |()|   # ,
-     _#_#___|__|___#_#__
-    [__________________]
-     |-_ -=__=-_ -==_-|
-     |_.------------.=|
-     |=| o        o |=|
-    _|-| !   `(   ! |-|_
-   /==_| ! _(_.)_ ! |=_-\
-   |jgs|/^\^=^^=^/^\| _=|
-```
+- Check out what I've built on [Github](https://github.com/Jaidenmagnan).
+- Sometimes I post on [X](https://x.com/jmoney_dev).
+- You can contact me through [email](mailto:jaidenmagnan@gmail.com).

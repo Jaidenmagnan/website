@@ -4,11 +4,11 @@ import { SITE_URL } from "./src/consts";
 
 // https://astro.build/config
 export default defineConfig({
-  site: SITE_URL,
-  markdown: {
-    shikiConfig: {
-      theme: "github-dark-default",
+    site: SITE_URL,
+    markdown: {
+        shikiConfig: {
+            theme: "rose-pine-dawn",
+        },
     },
-  },
-  integrations: [sitemap()],
+    integrations: [sitemap()],
 });
